@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12832" started-at="2016-09-28T20:19:25Z" finished-at="2016-09-28T20:19:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12832" started-at="2016-09-28T20:19:25Z" finished-at="2016-09-28T20:19:38Z">
+      <class name="com.example.tests.PracticGroupsTestsCopy">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@1810399e]" name="setUp" is-config="true" duration-ms="5459" started-at="2016-09-28T23:19:25Z" finished-at="2016-09-28T23:19:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@1810399e]" name="testEmptyGroup" duration-ms="2113" started-at="2016-09-28T23:19:30Z" finished-at="2016-09-28T23:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyGroup -->
+        <test-method status="PASS" signature="testNonEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@1810399e]" name="testNonEmptyGroup" duration-ms="1733" started-at="2016-09-28T23:19:32Z" finished-at="2016-09-28T23:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNonEmptyGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@1810399e]" name="tearDown" is-config="true" duration-ms="560" started-at="2016-09-28T23:19:37Z" finished-at="2016-09-28T23:19:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.PracticGroupsTestsCopy -->
+      <class name="com.example.tests.PracticGroupsTests">
+        <test-method status="PASS" signature="testEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTests@32d992b2]" name="testEmptyGroup" duration-ms="1416" started-at="2016-09-28T23:19:34Z" finished-at="2016-09-28T23:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyGroup -->
+        <test-method status="PASS" signature="testNonEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTests@32d992b2]" name="testNonEmptyGroup" duration-ms="1516" started-at="2016-09-28T23:19:36Z" finished-at="2016-09-28T23:19:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNonEmptyGroup -->
+      </class> <!-- com.example.tests.PracticGroupsTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
