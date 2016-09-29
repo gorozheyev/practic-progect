@@ -3,18 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.PracticGroupsTestsCopy">
+      <class name="CopyOfSecondTestGreationGroup">
+        <methods>
+          <include name="tesEmptytRorPractic2"/>
+          <include name="testRorPractic2"/>
+        </methods>
+      </class> <!-- CopyOfSecondTestGreationGroup -->
+      <class name="BaseTestClass">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.example.tests.PracticGroupsTestsCopy -->
-      <class name="com.example.tests.PracticGroupsTests">
+      </class> <!-- BaseTestClass -->
+      <class name="SecondTestGreationGroup">
         <methods>
-          <include name="testNonEmptyGroup"/>
-          <include name="testEmptyGroup"/>
+          <include name="testRorPractic2"/>
+          <include name="tesEmptytRorPractic2"/>
         </methods>
-      </class> <!-- com.example.tests.PracticGroupsTests -->
+      </class> <!-- SecondTestGreationGroup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
