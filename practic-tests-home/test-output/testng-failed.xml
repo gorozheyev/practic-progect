@@ -3,24 +3,31 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="CopyOfSecondTestGreationGroup">
+      <class name="com.example.tests.OneMoreCreationContact">
         <methods>
-          <include name="tesEmptytRorPractic2"/>
-          <include name="testRorPractic2"/>
+          <include name="setUp"/>
+          <include name="testCreatContact"/>
+          <include name="testCreateEmptyContact"/>
         </methods>
-      </class> <!-- CopyOfSecondTestGreationGroup -->
-      <class name="BaseTestClass">
+      </class> <!-- com.example.tests.OneMoreCreationContact -->
+      <class name="com.example.tests.BaseClassForContact">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- BaseTestClass -->
-      <class name="SecondTestGreationGroup">
+      </class> <!-- com.example.tests.BaseClassForContact -->
+      <class name="com.example.tests.CreationContact">
         <methods>
-          <include name="testRorPractic2"/>
-          <include name="tesEmptytRorPractic2"/>
+          <include name="testCreateEmptyContact"/>
+          <include name="testCreatContact"/>
         </methods>
-      </class> <!-- SecondTestGreationGroup -->
+      </class> <!-- com.example.tests.CreationContact -->
+      <class name="com.example.tests.PracticGroupsTestsCopy">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.example.tests.PracticGroupsTestsCopy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
