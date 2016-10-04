@@ -1,18 +1,17 @@
 package com.example.tests;
 
-
 import org.testng.annotations.Test;
 
-public class CreationContact extends BaseClassForContact{
-	
+public class CreationContact extends BaseClass{
+ 
   @Test
-  public void testCreatContact() throws Exception {
+  public void testCreateContact() throws Exception {
 openMainPage();
-createNewContact();
-DataForContact data = new DataForContact();
+addNewContact();
+DataForCreateContact data =new DataForCreateContact();
 data.namecontact = "Дима";
 data.familiya = "Горо";
-data.town = "Днепропетровск";
+data.town = "Днепр";
 data.phone1 = "050 123";
 data.phone2 = "050 456";
 data.phone3 = "050 789";
@@ -20,20 +19,20 @@ data.mail1 = "почта1";
 data.mail2 = "почта2";
 data.dateBirth = "28";
 data.monthBirth = "Август";
-data.yearBirth = "1980";
+data.yearBitrh = "1980";
 data.address = "Победа";
-data.house = "130";
+data.bilding = "130";
 fillContactForms(data);
-submitCreation();
+submitCreationContact();
 returnToMainPage();
   }
   
   @Test
-  public void testCreateEmptyContact() throws Exception {
+  public void testCteateEmptyContact() throws Exception {
 openMainPage();
-createNewContact();
-fillContactForms(new DataForContact("", "", "", "", "", "", "", "", "-", "-", "", "", ""));
-submitCreation();
+addNewContact();
+fillContactForms(new DataForCreateContact("", "", "", "", "", "", "", "", "-", "-", "", "", ""));
+submitCreationContact();
 returnToMainPage();
   }
 }

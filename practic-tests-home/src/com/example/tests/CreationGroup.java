@@ -1,15 +1,15 @@
 package com.example.tests;
 
+
 import org.testng.annotations.Test;
 
-public class PracticGroupsTestsCopy extends BaseTestClass {
-  
+public class CreationGroup extends BaseClass {
   @Test
   public void testNonEmptyGroup() throws Exception {
 	  openMainPage();
 	  openGroups();
 	  createNewGroup();
-	  TestData group = new TestData();
+	  DataForCreateGroup group = new DataForCreateGroup();
 	  group.name1 = "avtomation";
 	  group.header = "header avomation";
 	  group.footer = "footer avtomation";
@@ -23,9 +23,8 @@ public class PracticGroupsTestsCopy extends BaseTestClass {
 	  openMainPage();
 	  openGroups();
 	  createNewGroup();
-	  fillGroupForms(new TestData("", "", ""));
+	  fillGroupForms(new DataForCreateGroup("", "", ""));
 	  submitCreation();
 	  goToGroupPage();
   }
-
 }
