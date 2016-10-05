@@ -5,14 +5,12 @@
     <classes>
       <class name="com.example.tests.OneMoreCreationContact">
         <methods>
-          <include name="setUp"/>
           <include name="testCreatContact"/>
           <include name="testCreateEmptyContact"/>
         </methods>
       </class> <!-- com.example.tests.OneMoreCreationContact -->
       <class name="com.example.tests.BaseClassForContact">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.example.tests.BaseClassForContact -->
@@ -22,10 +20,16 @@
           <include name="testCreatContact"/>
         </methods>
       </class> <!-- com.example.tests.CreationContact -->
+      <class name="com.example.tests.PracticGroupsTests">
+        <methods>
+          <include name="testNonEmptyGroup"/>
+          <include name="testEmptyGroup"/>
+        </methods>
+      </class> <!-- com.example.tests.PracticGroupsTests -->
       <class name="com.example.tests.PracticGroupsTestsCopy">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="testNonEmptyGroup"/>
+          <include name="testEmptyGroup"/>
         </methods>
       </class> <!-- com.example.tests.PracticGroupsTestsCopy -->
     </classes>
