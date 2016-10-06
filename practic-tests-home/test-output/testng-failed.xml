@@ -3,35 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.OneMoreCreationContact">
-        <methods>
-          <include name="testCreatContact"/>
-          <include name="testCreateEmptyContact"/>
-        </methods>
-      </class> <!-- com.example.tests.OneMoreCreationContact -->
-      <class name="com.example.tests.BaseClassForContact">
+      <class name="com.example.tests.CreationGroup">
         <methods>
           <include name="setUp"/>
-        </methods>
-      </class> <!-- com.example.tests.BaseClassForContact -->
-      <class name="com.example.tests.CreationContact">
-        <methods>
-          <include name="testCreateEmptyContact"/>
-          <include name="testCreatContact"/>
-        </methods>
-      </class> <!-- com.example.tests.CreationContact -->
-      <class name="com.example.tests.PracticGroupsTests">
-        <methods>
+          <include name="tearDown"/>
           <include name="testNonEmptyGroup"/>
           <include name="testEmptyGroup"/>
         </methods>
-      </class> <!-- com.example.tests.PracticGroupsTests -->
-      <class name="com.example.tests.PracticGroupsTestsCopy">
-        <methods>
-          <include name="testNonEmptyGroup"/>
-          <include name="testEmptyGroup"/>
-        </methods>
-      </class> <!-- com.example.tests.PracticGroupsTestsCopy -->
+      </class> <!-- com.example.tests.CreationGroup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

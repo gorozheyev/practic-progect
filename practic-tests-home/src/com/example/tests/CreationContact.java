@@ -6,8 +6,8 @@ public class CreationContact extends BaseClass{
  
   @Test
   public void testCreateContact() throws Exception {
-openMainPage();
-addNewContact();
+app.getNavigationHelper().openMainPage();
+app.getContactHelper().addNewContact();
 DataForCreateContact data =new DataForCreateContact();
 data.namecontact = "Дима";
 data.familiya = "Горо";
@@ -22,17 +22,17 @@ data.monthBirth = "Август";
 data.yearBitrh = "1980";
 data.address = "Победа";
 data.bilding = "130";
-fillContactForms(data);
-submitCreationContact();
-returnToMainPage();
+app.getContactHelper().fillContactForms(data);
+app.getContactHelper().submitCreationContact();
+app.getContactHelper().returnToMainPage();
   }
   
   @Test
   public void testCteateEmptyContact() throws Exception {
-openMainPage();
-addNewContact();
-fillContactForms(new DataForCreateContact("", "", "", "", "", "", "", "", "-", "-", "", "", ""));
-submitCreationContact();
-returnToMainPage();
+app.getNavigationHelper().openMainPage();
+app.getContactHelper().addNewContact();
+app.getContactHelper().fillContactForms(new DataForCreateContact("", "", "", "", "", "", "", "", "-", "-", "", "", ""));
+app.getContactHelper().submitCreationContact();
+app.getContactHelper().returnToMainPage();
   }
 }

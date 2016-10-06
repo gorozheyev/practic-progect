@@ -1,69 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56765" started-at="2016-10-04T11:27:51Z" finished-at="2016-10-04T11:28:48Z">
+  <suite name="Default suite" duration-ms="98360" started-at="2016-10-06T12:17:30Z" finished-at="2016-10-06T12:19:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56765" started-at="2016-10-04T11:27:51Z" finished-at="2016-10-04T11:28:48Z">
-      <class name="com.example.tests.PracticGroupsTestsCopy">
-        <test-method status="PASS" signature="testEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@5d5eef3d]" name="testEmptyGroup" duration-ms="870" started-at="2016-10-04T14:28:41Z" finished-at="2016-10-04T14:28:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyGroup -->
-        <test-method status="PASS" signature="testNonEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@5d5eef3d]" name="testNonEmptyGroup" duration-ms="1245" started-at="2016-10-04T14:28:41Z" finished-at="2016-10-04T14:28:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroup -->
-      </class> <!-- com.example.tests.PracticGroupsTestsCopy -->
-      <class name="com.example.tests.CreationContact">
-        <test-method status="PASS" signature="testCreatContact()[pri:0, instance:com.example.tests.CreationContact@6cc4c815]" name="testCreatContact" duration-ms="1819" started-at="2016-10-04T14:28:37Z" finished-at="2016-10-04T14:28:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatContact -->
-        <test-method status="PASS" signature="testCreateEmptyContact()[pri:0, instance:com.example.tests.CreationContact@6cc4c815]" name="testCreateEmptyContact" duration-ms="1614" started-at="2016-10-04T14:28:39Z" finished-at="2016-10-04T14:28:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateEmptyContact -->
-      </class> <!-- com.example.tests.CreationContact -->
-      <class name="com.example.tests.PracticGroupsTests">
-        <test-method status="PASS" signature="testEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTests@3a82f6ef]" name="testEmptyGroup" duration-ms="2728" started-at="2016-10-04T14:28:32Z" finished-at="2016-10-04T14:28:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyGroup -->
-        <test-method status="PASS" signature="testNonEmptyGroup()[pri:0, instance:com.example.tests.PracticGroupsTests@3a82f6ef]" name="testNonEmptyGroup" duration-ms="2425" started-at="2016-10-04T14:28:35Z" finished-at="2016-10-04T14:28:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroup -->
-      </class> <!-- com.example.tests.PracticGroupsTests -->
-      <class name="com.example.tests.BaseClassForContact">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.BaseClassForContact@23ceabc1]" name="setUp" is-config="true" duration-ms="13952" started-at="2016-10-04T14:27:51Z" finished-at="2016-10-04T14:28:05Z">
+    <test name="Default test" duration-ms="98360" started-at="2016-10-06T12:17:30Z" finished-at="2016-10-06T12:19:08Z">
+      <class name="com.example.tests.GroupModificationTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.GroupModificationTests@363ee3a2]" name="setUp" is-config="true" duration-ms="5418" started-at="2016-10-06T15:17:30Z" finished-at="2016-10-06T15:17:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@5d5eef3d]" name="setUp" is-config="true" duration-ms="7906" started-at="2016-10-04T14:28:05Z" finished-at="2016-10-04T14:28:13Z">
+        <test-method status="PASS" signature="modifySomeGroup()[pri:0, instance:com.example.tests.GroupModificationTests@363ee3a2]" name="modifySomeGroup" duration-ms="92384" started-at="2016-10-06T15:17:35Z" finished-at="2016-10-06T15:19:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.BaseClassForContact@23ceabc1]" name="tearDown" is-config="true" duration-ms="4823" started-at="2016-10-04T14:28:43Z" finished-at="2016-10-04T14:28:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.PracticGroupsTestsCopy@5d5eef3d]" name="tearDown" is-config="true" duration-ms="398" started-at="2016-10-04T14:28:48Z" finished-at="2016-10-04T14:28:48Z">
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupModificationTests@363ee3a2]" name="tearDown" is-config="true" duration-ms="531" started-at="2016-10-06T15:19:08Z" finished-at="2016-10-06T15:19:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.BaseClassForContact -->
-      <class name="com.example.tests.OneMoreCreationContact">
-        <test-method status="PASS" signature="testCreatContact()[pri:0, instance:com.example.tests.OneMoreCreationContact@56f4468b]" name="testCreatContact" duration-ms="17228" started-at="2016-10-04T14:28:13Z" finished-at="2016-10-04T14:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatContact -->
-        <test-method status="PASS" signature="testCreateEmptyContact()[pri:0, instance:com.example.tests.OneMoreCreationContact@56f4468b]" name="testCreateEmptyContact" duration-ms="1677" started-at="2016-10-04T14:28:30Z" finished-at="2016-10-04T14:28:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateEmptyContact -->
-      </class> <!-- com.example.tests.OneMoreCreationContact -->
+      </class> <!-- com.example.tests.GroupModificationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
