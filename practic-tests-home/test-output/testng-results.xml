@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98360" started-at="2016-10-06T12:17:30Z" finished-at="2016-10-06T12:19:08Z">
+  <suite name="Default suite" duration-ms="43023" started-at="2016-10-07T12:55:57Z" finished-at="2016-10-07T12:56:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98360" started-at="2016-10-06T12:17:30Z" finished-at="2016-10-06T12:19:08Z">
-      <class name="com.example.tests.GroupModificationTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.GroupModificationTests@363ee3a2]" name="setUp" is-config="true" duration-ms="5418" started-at="2016-10-06T15:17:30Z" finished-at="2016-10-06T15:17:35Z">
+    <test name="Default test" duration-ms="43023" started-at="2016-10-07T12:55:57Z" finished-at="2016-10-07T12:56:40Z">
+      <class name="com.example.tests.ContactRemovalTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactRemovalTests@363ee3a2]" name="setUp" is-config="true" duration-ms="4254" started-at="2016-10-07T15:55:57Z" finished-at="2016-10-07T15:56:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="modifySomeGroup()[pri:0, instance:com.example.tests.GroupModificationTests@363ee3a2]" name="modifySomeGroup" duration-ms="92384" started-at="2016-10-06T15:17:35Z" finished-at="2016-10-06T15:19:08Z">
+        <test-method status="PASS" signature="deleteSomeContact()[pri:0, instance:com.example.tests.ContactRemovalTests@363ee3a2]" name="deleteSomeContact" duration-ms="38277" started-at="2016-10-07T15:56:01Z" finished-at="2016-10-07T15:56:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- modifySomeGroup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupModificationTests@363ee3a2]" name="tearDown" is-config="true" duration-ms="531" started-at="2016-10-06T15:19:08Z" finished-at="2016-10-06T15:19:08Z">
+        </test-method> <!-- deleteSomeContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactRemovalTests@363ee3a2]" name="tearDown" is-config="true" duration-ms="472" started-at="2016-10-07T15:56:39Z" finished-at="2016-10-07T15:56:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.GroupModificationTests -->
+      </class> <!-- com.example.tests.ContactRemovalTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
