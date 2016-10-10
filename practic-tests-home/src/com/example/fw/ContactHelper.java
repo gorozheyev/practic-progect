@@ -46,4 +46,9 @@ public class ContactHelper extends HelperBase{
 		click(By.cssSelector("img[alt='Изменить']"));
 	}
 
+	public void submitContactForms() {
+		click(By.xpath("(//input[@name='update'])[1]"));
+		
+	}
+
 }

@@ -1,6 +1,9 @@
 package com.example.tests;
 
 
+import java.util.List;
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 public class CreationGroup extends BaseClass {
@@ -8,6 +11,11 @@ public class CreationGroup extends BaseClass {
   public void testNonEmptyGroup() throws Exception {
 	  app.getNavigationHelper().openMainPage();
 	  app.getNavigationHelper().openGroups();
+	  
+//	  save old state
+	  List<DataForCreateGroup> oldList = app.getGroupHelper().getGroups();
+	  
+//	  actions
 	  app.getGroupHelper().createNewGroup();
 	  DataForCreateGroup group = new DataForCreateGroup();
 	  group.name1 = "avtomation";
@@ -16,9 +24,16 @@ public class CreationGroup extends BaseClass {
 	  app.getGroupHelper().fillGroupForms(group);
 	  app.getGroupHelper().submitCreation();
 	  app.getGroupHelper().goToGroupPage();
+	  
+//	  save new state
+	  List<DataForCreateGroup> newList = app.getGroupHelper().getGroups();
+	  
+//	  compare states
+	  assertEquals(newList.size(), oldList.size()+1);
+	  
   }
   
-  @Test
+//  @Test
   public void testEmptyGroup() throws Exception {
 	  app.getNavigationHelper().openMainPage();
 	  app.getNavigationHelper().openGroups();

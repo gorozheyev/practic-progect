@@ -3,13 +3,44 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.ContactRemovalTests">
+      <class name="com.example.tests.ContactModificationTests">
+        <methods>
+          <include name="modificateSomeGroup"/>
+        </methods>
+      </class> <!-- com.example.tests.ContactModificationTests -->
+      <class name="com.example.tests.CreationContact">
+        <methods>
+          <include name="testCreateContact"/>
+          <include name="testCteateEmptyContact"/>
+        </methods>
+      </class> <!-- com.example.tests.CreationContact -->
+      <class name="com.example.tests.BaseClass">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.example.tests.BaseClass -->
+      <class name="com.example.tests.GroupModificationTests">
+        <methods>
+          <include name="modifySomeGroup"/>
+        </methods>
+      </class> <!-- com.example.tests.GroupModificationTests -->
+      <class name="com.example.tests.ContactRemovalTests">
+        <methods>
           <include name="deleteSomeContact"/>
         </methods>
       </class> <!-- com.example.tests.ContactRemovalTests -->
+      <class name="com.example.tests.CreationGroup">
+        <methods>
+          <include name="testNonEmptyGroup"/>
+          <include name="testEmptyGroup"/>
+        </methods>
+      </class> <!-- com.example.tests.CreationGroup -->
+      <class name="com.example.tests.GroupRemovalTests">
+        <methods>
+          <include name="deleteSomeGroup"/>
+        </methods>
+      </class> <!-- com.example.tests.GroupRemovalTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
