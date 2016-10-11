@@ -1,6 +1,7 @@
 package com.example.tests;
 
 
+import java.util.Collections;
 import java.util.List;
 import static org.testng.Assert.assertEquals;
 
@@ -18,7 +19,7 @@ public class CreationGroup extends BaseClass {
 //	  actions
 	  app.getGroupHelper().createNewGroup();
 	  DataForCreateGroup group = new DataForCreateGroup();
-	  group.name1 = "avtomation";
+	  group.name1 = "avtotest";
 	  group.header = "header avomation";
 	  group.footer = "footer avtomation";
 	  app.getGroupHelper().fillGroupForms(group);
@@ -30,6 +31,10 @@ public class CreationGroup extends BaseClass {
 	  
 //	  compare states
 	  assertEquals(newList.size(), oldList.size()+1);
+	  
+	  oldList.add(group);
+	  Collections.sort(oldList);
+	  assertEquals(newList, oldList);
 	  
   }
   
