@@ -31,7 +31,20 @@ app.getContactHelper().returnToMainPage();
   public void testCteateEmptyContact() throws Exception {
 app.getNavigationHelper().openMainPage();
 app.getContactHelper().addNewContact();
-app.getContactHelper().fillContactForms(new DataForCreateContact("", "", "", "", "", "", "", "", "-", "-", "", "", ""));
+DataForCreateContact data = new DataForCreateContact();
+data.namecontact = "";
+data.familiya = "";
+data.town = "";
+data.phone1 = "";
+data.phone2 = "";
+data.phone3 = "";
+data.mail1 = "";
+data.mail2 = "";
+data.dateBirth = "-";
+data.monthBirth = "-";
+data.yearBitrh = "";
+data.address = "";
+data.bilding = "";
 app.getContactHelper().submitCreationContact();
 app.getContactHelper().returnToMainPage();
   }

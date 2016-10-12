@@ -15,9 +15,12 @@ public class DataForCreateGroup implements Comparable<DataForCreateGroup>{
 	public DataForCreateGroup() {
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "DataForCreateGroup [name1=" + name1 + "]";
+		return "DataForCreateGroup [name1=" + name1 + ", header=" + header
+				+ ", footer=" + footer + "]";
 	}
 
 	@Override

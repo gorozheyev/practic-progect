@@ -1,15 +1,17 @@
 package com.example.tests;
 
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.Collections;
 import java.util.List;
-import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-public class CreationGroup extends BaseClass {
-  @Test
-  public void testNonEmptyGroup() throws Exception {
+public class CreationGroup extends BaseClass {	
+	
+  @Test(dataProvider = "randomValidGroupsGenerator")
+  public void testGroupCreationWithWalidData(DataForCreateGroup group) throws Exception {
 	  app.getNavigationHelper().openMainPage();
 	  app.getNavigationHelper().openGroups();
 	  
@@ -18,10 +20,6 @@ public class CreationGroup extends BaseClass {
 	  
 //	  actions
 	  app.getGroupHelper().createNewGroup();
-	  DataForCreateGroup group = new DataForCreateGroup();
-	  group.name1 = "avtotest";
-	  group.header = "header avomation";
-	  group.footer = "footer avtomation";
 	  app.getGroupHelper().fillGroupForms(group);
 	  app.getGroupHelper().submitCreation();
 	  app.getGroupHelper().goToGroupPage();
@@ -30,21 +28,10 @@ public class CreationGroup extends BaseClass {
 	  List<DataForCreateGroup> newList = app.getGroupHelper().getGroups();
 	  
 //	  compare states
-	  assertEquals(newList.size(), oldList.size()+1);
-	  
 	  oldList.add(group);
 	  Collections.sort(oldList);
 	  assertEquals(newList, oldList);
 	  
   }
   
-//  @Test
-  public void testEmptyGroup() throws Exception {
-	  app.getNavigationHelper().openMainPage();
-	  app.getNavigationHelper().openGroups();
-	  app.getGroupHelper().createNewGroup();
-	  app.getGroupHelper().fillGroupForms(new DataForCreateGroup("", "", ""));
-	  app.getGroupHelper().submitCreation();
-	  app.getGroupHelper().goToGroupPage();
-  }
 }
