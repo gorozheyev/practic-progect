@@ -1,6 +1,10 @@
 package com.example.fw;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import com.example.tests.DataForCreateContact;
 
@@ -49,6 +53,18 @@ public class ContactHelper extends HelperBase{
 	public void submitContactForms() {
 		click(By.xpath("(//input[@name='update'])[1]"));
 		
+	}
+
+	public List<DataForCreateContact> getContacts() {
+		List<DataForCreateContact> contacts = new ArrayList<DataForCreateContact>();
+		List<WebElement> checkboxes = driver.findElements(By.name("selected[]"));
+		for (WebElement checkbox : checkboxes) {
+			DataForCreateContact contact = new DataForCreateContact();
+			String title = checkbox.getAttribute("title");
+			contact.namecontact = title.substring("Select (".length(), title.length() - " Горо)".length());
+			contacts.add(contact);
+		}
+		return contacts;
 	}
 
 }

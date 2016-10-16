@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.example.tests.GroupRemovalTests">
+      <class name="com.example.tests.CreationContact">
         <methods>
-          <include name="deleteSomeGroup"/>
           <include name="setUp"/>
+          <include name="testCreateContact"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.example.tests.GroupRemovalTests -->
+      </class> <!-- com.example.tests.CreationContact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
