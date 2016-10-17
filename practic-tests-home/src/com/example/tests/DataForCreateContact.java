@@ -37,9 +37,16 @@ public class DataForCreateContact implements Comparable<DataForCreateContact>{
 	public DataForCreateContact() {	
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "DataForCreateContact [namecontact=" + namecontact + "]";
+		return "DataForCreateContact [namecontact=" + namecontact
+				+ ", familiya=" + familiya + ", town=" + town + ", phone1="
+				+ phone1 + ", phone2=" + phone2 + ", phone3=" + phone3
+				+ ", mail1=" + mail1 + ", mail2=" + mail2 + ", yearBitrh="
+				+ yearBitrh + ", address=" + address + ", bilding=" + bilding
+				+ "]";
 	}
 
 	@Override

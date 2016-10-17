@@ -1,21 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="5" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7371" started-at="2016-10-17T19:15:40Z" finished-at="2016-10-17T19:15:48Z">
+  <suite name="Default suite" duration-ms="11259" started-at="2016-10-17T20:34:06Z" finished-at="2016-10-17T20:34:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7371" started-at="2016-10-17T19:15:40Z" finished-at="2016-10-17T19:15:48Z">
+    <test name="Default test" duration-ms="11259" started-at="2016-10-17T20:34:06Z" finished-at="2016-10-17T20:34:18Z">
       <class name="com.example.tests.ContactModificationTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="setUp" is-config="true" duration-ms="4664" started-at="2016-10-17T22:15:40Z" finished-at="2016-10-17T22:15:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="setUp" is-config="true" duration-ms="4087" started-at="2016-10-17T23:34:06Z" finished-at="2016-10-17T23:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="modificateSomeGroup()[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="modificateSomeGroup" duration-ms="2041" started-at="2016-10-17T22:15:45Z" finished-at="2016-10-17T22:15:47Z">
+        <test-method status="FAIL" signature="modificateSomeGroup(com.example.tests.DataForCreateContact)[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="modificateSomeGroup" duration-ms="1593" started-at="2016-10-17T23:34:11Z" data-provider="randomValidContactGenerator" finished-at="2016-10-17T23:34:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataForCreateContact [namecontact=test-377428111, familiya=test1619935535, town=, phone1=, phone2=test1826803496, phone3=test-2089628761, mail1=test397926948, mail2=, yearBitrh=, address=test-1074999797, bilding=test751392731]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:42)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:115)
+	at com.example.fw.HelperBase.selectByText(HelperBase.java:63)
+	at com.example.fw.ContactHelper.fillContactForms(ContactHelper.java:30)
+	at com.example.tests.ContactModificationTests.modificateSomeGroup(ContactModificationTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modificateSomeGroup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="tearDown" is-config="true" duration-ms="646" started-at="2016-10-17T22:15:47Z" finished-at="2016-10-17T22:15:48Z">
+        <test-method status="FAIL" signature="modificateSomeGroup(com.example.tests.DataForCreateContact)[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="modificateSomeGroup" duration-ms="1236" started-at="2016-10-17T23:34:12Z" data-provider="randomValidContactGenerator" finished-at="2016-10-17T23:34:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataForCreateContact [namecontact=test1942007221, familiya=test-874451519, town=, phone1=, phone2=test34210327, phone3=, mail1=, mail2=test-539697505, yearBitrh=, address=, bilding=]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:42)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:115)
+	at com.example.fw.HelperBase.selectByText(HelperBase.java:63)
+	at com.example.fw.ContactHelper.fillContactForms(ContactHelper.java:30)
+	at com.example.tests.ContactModificationTests.modificateSomeGroup(ContactModificationTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificateSomeGroup -->
+        <test-method status="FAIL" signature="modificateSomeGroup(com.example.tests.DataForCreateContact)[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="modificateSomeGroup" duration-ms="1263" started-at="2016-10-17T23:34:13Z" data-provider="randomValidContactGenerator" finished-at="2016-10-17T23:34:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataForCreateContact [namecontact=, familiya=, town=test-2021870471, phone1=, phone2=test1605629976, phone3=, mail1=test-770450397, mail2=test-1270384617, yearBitrh=test-1385676568, address=test-1515582986, bilding=test-645205270]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:42)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:115)
+	at com.example.fw.HelperBase.selectByText(HelperBase.java:63)
+	at com.example.fw.ContactHelper.fillContactForms(ContactHelper.java:30)
+	at com.example.tests.ContactModificationTests.modificateSomeGroup(ContactModificationTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificateSomeGroup -->
+        <test-method status="FAIL" signature="modificateSomeGroup(com.example.tests.DataForCreateContact)[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="modificateSomeGroup" duration-ms="1200" started-at="2016-10-17T23:34:15Z" data-provider="randomValidContactGenerator" finished-at="2016-10-17T23:34:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataForCreateContact [namecontact=, familiya=test-1807955571, town=test-2000425503, phone1=test269688556, phone2=test-1389231421, phone3=, mail1=test1988255087, mail2=test509073262, yearBitrh=test-2090382485, address=, bilding=test-608693156]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:42)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:115)
+	at com.example.fw.HelperBase.selectByText(HelperBase.java:63)
+	at com.example.fw.ContactHelper.fillContactForms(ContactHelper.java:30)
+	at com.example.tests.ContactModificationTests.modificateSomeGroup(ContactModificationTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificateSomeGroup -->
+        <test-method status="FAIL" signature="modificateSomeGroup(com.example.tests.DataForCreateContact)[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="modificateSomeGroup" duration-ms="1164" started-at="2016-10-17T23:34:16Z" data-provider="randomValidContactGenerator" finished-at="2016-10-17T23:34:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DataForCreateContact [namecontact=, familiya=test-1410105099, town=test-1397052814, phone1=, phone2=, phone3=test-1310293601, mail1=, mail2=, yearBitrh=test292900575, address=, bilding=test1815736814]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:42)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:115)
+	at com.example.fw.HelperBase.selectByText(HelperBase.java:63)
+	at com.example.fw.ContactHelper.fillContactForms(ContactHelper.java:30)
+	at com.example.tests.ContactModificationTests.modificateSomeGroup(ContactModificationTests.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificateSomeGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactModificationTests@1efbd816]" name="tearDown" is-config="true" duration-ms="680" started-at="2016-10-17T23:34:17Z" finished-at="2016-10-17T23:34:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

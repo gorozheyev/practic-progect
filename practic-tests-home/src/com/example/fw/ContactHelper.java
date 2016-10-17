@@ -42,11 +42,11 @@ public class ContactHelper extends HelperBase{
 		click(By.linkText("home page"));
 	}
 
-	public void deleteContact() {
+	public void deleteContact(int index) {
 		click(By.xpath("(//input[@name='update'])[2]"));
 	}
 	
-	public void openFirstContact(){
+	public void openFirstContact(int index){
 		click(By.cssSelector("img[alt='Изменить']"));
 	}
 
