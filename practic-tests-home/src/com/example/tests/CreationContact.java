@@ -38,21 +38,25 @@ public class CreationContact extends BaseClass{
 //	save new state
 	List<DataForCreateContact> newList = app.getContactHelper().getContacts();
 	
-//	compare states
-	assertEquals(newList.size(), oldList.size() + 1);	
+//	compare states	
 	oldList.add(data);
 	Collections.sort(oldList);
 	assertEquals(newList, oldList);
 	
   }
   
-//  @Test
+  @Test
   public void testCteateEmptyContact() throws Exception {
 	app.getNavigationHelper().openMainPage();
+	
+//	save old state
+	List<DataForCreateContact> oldList = app.getContactHelper().getContacts();
+	
+//	actions
 	app.getContactHelper().addNewContact();
 	DataForCreateContact data = new DataForCreateContact();
 	data.namecontact = "";
-	data.familiya = "";
+	data.familiya = "Горо";
 	data.town = "";
 	data.phone1 = "";
 	data.phone2 = "";
@@ -67,5 +71,13 @@ public class CreationContact extends BaseClass{
 	app.getContactHelper().fillContactForms(data);
 	app.getContactHelper().submitCreationContact();
 	app.getContactHelper().returnToMainPage();
+	
+//	save new state
+	List<DataForCreateContact> newList = app.getContactHelper().getContacts();
+	
+//	compare states
+	oldList.add(data);
+	Collections.sort(oldList);
+	assertEquals(newList, oldList);
   }
 }
