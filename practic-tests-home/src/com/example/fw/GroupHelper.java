@@ -19,9 +19,9 @@ public class GroupHelper extends HelperBase{
 	}
 
 	public void fillGroupForms(DataForCreateGroup group) {
-	    type(By.name("group_name"), group.name1);
-	    type(By.name("group_header"), group.header);
-	    type(By.name("group_footer"), group.footer);
+	    type(By.name("group_name"), group.getName1());
+	    type(By.name("group_header"), group.getHeader());
+	    type(By.name("group_footer"), group.getFooter());
 	}
 
 	public void submitCreation() {
@@ -56,10 +56,9 @@ public class GroupHelper extends HelperBase{
 		List<DataForCreateGroup> groups = new ArrayList<DataForCreateGroup>();
 		List<WebElement> checkboxes = driver.findElements(By.name("selected[]"));
 		for (WebElement checkbox : checkboxes) {
-			DataForCreateGroup group = new DataForCreateGroup();
 			String title = checkbox.getAttribute("title");
-			group.name1 = title.substring("Select (".length(), title.length() - ")".length());
-			groups.add(group);
+			String name1 = title.substring("Select (".length(), title.length() - ")".length());
+			groups.add(new DataForCreateGroup().withName(name1));
 		}
 		return groups;
 	}

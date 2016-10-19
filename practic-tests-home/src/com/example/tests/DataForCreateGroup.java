@@ -2,9 +2,9 @@ package com.example.tests;
 
 public class DataForCreateGroup implements Comparable<DataForCreateGroup>{
 	
-	public String name1;
-	public String header;
-	public String footer;
+	private String name1;
+	private String header;
+	private String footer;
 
 	public DataForCreateGroup(String name1, String header, String footer) {
 		this.name1 = name1;
@@ -51,6 +51,33 @@ public class DataForCreateGroup implements Comparable<DataForCreateGroup>{
 	@Override
 	public int compareTo(DataForCreateGroup other) {
 		return this.name1.toLowerCase().compareTo(other.name1.toLowerCase());
+	}
+
+	public DataForCreateGroup withName(String name1) {
+		this.name1 = name1;
+		return this;
+	}
+
+	public String getName1() {
+		return name1;
+	}
+
+	public String getHeader() {
+		return header;
+	}
+
+	public String getFooter() {
+		return footer;
+	}
+
+	public DataForCreateGroup withHeader(String header) {
+		this.header = header;
+		return this;
+	}
+
+	public DataForCreateGroup withFooter(String footer) {
+		this.footer = footer;
+		return this;
 	}
 	
 	

@@ -30,10 +30,10 @@ public class BaseClass {
 	public Iterator<Object[]> randomValidGroupsGenerator(){
 		List<Object[]> list = new ArrayList<Object[]>();
 		for (int i=0; i<5; i++){
-			DataForCreateGroup group = new DataForCreateGroup();
-			group.name1 = generateRandomeString();			
-			group.header = generateRandomeString();
-			group.footer = generateRandomeString();
+			DataForCreateGroup group = new DataForCreateGroup()
+			.withName(generateRandomeString())
+			.withHeader(generateRandomeString())
+			.withFooter(generateRandomeString());
 			list.add(new Object[]{group});
 		}
 		return list.iterator();

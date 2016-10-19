@@ -6,8 +6,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import org.testng.annotations.Test;
-
 public class CreationContact extends BaseClass{
 	
 	
@@ -21,7 +19,7 @@ public class CreationContact extends BaseClass{
 			}
 	}
  
-  @Test(dataProvider = "randomValidContactGenerator")
+//  @Test(dataProvider = "randomValidContactGenerator")
   public void testCreateContactWithValidData(DataForCreateContact data) throws Exception {
 	app.getNavigationHelper().openMainPage();
 	
