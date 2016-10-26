@@ -12,7 +12,7 @@ public class ContactModificationTests extends BaseClass{
 	
 	@Test(dataProvider = "randomValidContactGenerator")
 	public void modificateSomeGroup(DataForCreateContact data){
-	app.getNavigationHelper().openMainPage();
+	app.navigateTo().mainPage();
 	
 //	save old state
 	List<DataForCreateContact> oldList = app.getContactHelper().getContacts();

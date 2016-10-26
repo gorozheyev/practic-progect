@@ -12,9 +12,6 @@ public class GroupModificationTests extends BaseClass{
 	
 	@Test(dataProvider = "randomValidGroupsGenerator")
 	public void modifySomeGroup(DataForCreateGroup group){
-		app.getNavigationHelper().openMainPage();
-		app.getNavigationHelper().openGroups();
-		
 //		  save old state
 		  List<DataForCreateGroup> oldList = app.getGroupHelper().getGroups();
 		  
@@ -22,11 +19,8 @@ public class GroupModificationTests extends BaseClass{
 		  int index = rnd.nextInt(oldList.size()-1);
 		  
 //		  actions
-		app.getGroupHelper().initGroupModification(index);
-		app.getGroupHelper().fillGroupForms(group);
-		app.getGroupHelper().submitGroupModification();
-		app.getGroupHelper().goToGroupPage();
-		
+		app.getGroupHelper().modifyGroup(index, group);
+
 //		  save new state
 		  List<DataForCreateGroup> newList = app.getGroupHelper().getGroups();
 		  

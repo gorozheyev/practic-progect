@@ -12,7 +12,7 @@ public class ContactRemovalTests extends BaseClass{
 	
 	@Test
 	public void deleteSomeContact(){
-		app.getNavigationHelper().openMainPage();
+		app.navigateTo().mainPage();
 		
 		
 //		save old state

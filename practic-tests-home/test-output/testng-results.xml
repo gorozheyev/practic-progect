@@ -1,76 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23973" started-at="2016-10-19T20:44:10Z" finished-at="2016-10-19T20:44:34Z">
+  <suite name="Default suite" duration-ms="8232" started-at="2016-10-24T12:16:13Z" finished-at="2016-10-24T12:16:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23973" started-at="2016-10-19T20:44:10Z" finished-at="2016-10-19T20:44:34Z">
-      <class name="com.example.tests.CreationGroup">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.CreationGroup@1efbd816]" name="setUp" is-config="true" duration-ms="11818" started-at="2016-10-19T23:44:10Z" finished-at="2016-10-19T23:44:22Z">
+    <test name="Default test" duration-ms="8232" started-at="2016-10-24T12:16:13Z" finished-at="2016-10-24T12:16:22Z">
+      <class name="com.example.tests.GroupRemovalTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.GroupRemovalTests@3c756e4d]" name="setUp" is-config="true" duration-ms="5147" started-at="2016-10-24T15:16:13Z" finished-at="2016-10-24T15:16:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGroupCreationWithWalidData(com.example.tests.DataForCreateGroup)[pri:0, instance:com.example.tests.CreationGroup@1efbd816]" name="testGroupCreationWithWalidData" duration-ms="3307" started-at="2016-10-19T23:44:22Z" data-provider="randomValidGroupsGenerator" finished-at="2016-10-19T23:44:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DataForCreateGroup [name1=test2007042959, header=, footer=test1564591881]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="deleteSomeGroup()[pri:0, instance:com.example.tests.GroupRemovalTests@3c756e4d]" name="deleteSomeGroup" duration-ms="2220" started-at="2016-10-24T15:16:18Z" finished-at="2016-10-24T15:16:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGroupCreationWithWalidData -->
-        <test-method status="PASS" signature="testGroupCreationWithWalidData(com.example.tests.DataForCreateGroup)[pri:0, instance:com.example.tests.CreationGroup@1efbd816]" name="testGroupCreationWithWalidData" duration-ms="2109" started-at="2016-10-19T23:44:25Z" data-provider="randomValidGroupsGenerator" finished-at="2016-10-19T23:44:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DataForCreateGroup [name1=test-1962614335, header=, footer=test339945960]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationWithWalidData -->
-        <test-method status="PASS" signature="testGroupCreationWithWalidData(com.example.tests.DataForCreateGroup)[pri:0, instance:com.example.tests.CreationGroup@1efbd816]" name="testGroupCreationWithWalidData" duration-ms="1927" started-at="2016-10-19T23:44:27Z" data-provider="randomValidGroupsGenerator" finished-at="2016-10-19T23:44:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DataForCreateGroup [name1=test-1366635044, header=test-1937226335, footer=test-356800774]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationWithWalidData -->
-        <test-method status="PASS" signature="testGroupCreationWithWalidData(com.example.tests.DataForCreateGroup)[pri:0, instance:com.example.tests.CreationGroup@1efbd816]" name="testGroupCreationWithWalidData" duration-ms="2002" started-at="2016-10-19T23:44:29Z" data-provider="randomValidGroupsGenerator" finished-at="2016-10-19T23:44:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DataForCreateGroup [name1=test1724918140, header=test-1050007666, footer=test1719787221]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationWithWalidData -->
-        <test-method status="PASS" signature="testGroupCreationWithWalidData(com.example.tests.DataForCreateGroup)[pri:0, instance:com.example.tests.CreationGroup@1efbd816]" name="testGroupCreationWithWalidData" duration-ms="1864" started-at="2016-10-19T23:44:31Z" data-provider="randomValidGroupsGenerator" finished-at="2016-10-19T23:44:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[DataForCreateGroup [name1=, header=, footer=]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGroupCreationWithWalidData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.CreationGroup@1efbd816]" name="tearDown" is-config="true" duration-ms="875" started-at="2016-10-19T23:44:33Z" finished-at="2016-10-19T23:44:34Z">
+        </test-method> <!-- deleteSomeGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupRemovalTests@3c756e4d]" name="tearDown" is-config="true" duration-ms="853" started-at="2016-10-24T15:16:21Z" finished-at="2016-10-24T15:16:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.CreationGroup -->
+      </class> <!-- com.example.tests.GroupRemovalTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

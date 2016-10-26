@@ -21,7 +21,7 @@ public class CreationContact extends BaseClass{
  
 //  @Test(dataProvider = "randomValidContactGenerator")
   public void testCreateContactWithValidData(DataForCreateContact data) throws Exception {
-	app.getNavigationHelper().openMainPage();
+	app.navigateTo().mainPage();
 	
 //	save old state
 	List<DataForCreateContact> oldList = app.getContactHelper().getContacts();
