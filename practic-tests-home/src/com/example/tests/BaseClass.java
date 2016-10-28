@@ -32,7 +32,7 @@ public class BaseClass {
 		return wrapGroupsForDataProvider(generateRandomeGroups(5)).iterator();
 	}
 	
-	private List<Object[]> wrapGroupsForDataProvider(List<DataForCreateGroup> groups) {
+	public static List<Object[]> wrapGroupsForDataProvider(List<DataForCreateGroup> groups) {
 		List<Object[]> list = new ArrayList<Object[]>();
 		for (DataForCreateGroup group : groups) {
 			list.add(new Object[]{group});
