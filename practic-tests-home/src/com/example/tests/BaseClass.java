@@ -2,9 +2,12 @@ package com.example.tests;
 
 import static com.example.tests.GroupDataGenerator.generateRandomeGroups;
 
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Properties;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -18,7 +21,9 @@ public class BaseClass {
 
 	@BeforeTest
 	public void setUp() throws Exception {
-		app = new ApplicationManager();   
+		Properties properties = new Properties();
+		properties.load(new FileReader(new File("application.properties")));
+		app = new ApplicationManager(properties);   
 	  }
 
 	@AfterTest

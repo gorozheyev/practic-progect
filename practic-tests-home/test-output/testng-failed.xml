@@ -5,9 +5,8 @@
     <classes>
       <class name="com.example.tests.CreationGroup">
         <methods>
-          <include name="testGroupCreationWithWalidData" invocation-numbers="0 1 2"/>
+          <include name="testGroupCreationWithWalidData"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- com.example.tests.CreationGroup -->
     </classes>

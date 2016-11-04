@@ -2,6 +2,8 @@ package com.example.tests;
 
 
 import static com.example.tests.GroupDataGenerator.loadGroupsFromCsvFile;
+import static com.example.tests.GroupDataGenerator.loadGroupsFromXmlFile;
+
 import static org.testng.Assert.assertEquals;
 
 import java.io.File;
@@ -17,7 +19,7 @@ public class CreationGroup extends BaseClass {
 	
 	@DataProvider
 	public Iterator<Object[]> groupsFromFile() throws IOException {
-		return wrapGroupsForDataProvider(loadGroupsFromCsvFile(new File("groups.txt"))).iterator();
+		return wrapGroupsForDataProvider(loadGroupsFromXmlFile(new File("groups.xml"))).iterator();
 	}
 	
 @Test(dataProvider = "groupsFromFile")

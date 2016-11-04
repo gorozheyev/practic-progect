@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.thoughtworks.xstream.XStream;
+
 public class GroupDataGenerator {
 
 
@@ -37,10 +39,20 @@ public class GroupDataGenerator {
 		}
 	}
 
-	private static void saveGroupsToXmlFile(List<DataForCreateGroup> groups,
-			File file) {
-		// TODO Auto-generated method stub
-		
+	private static void saveGroupsToXmlFile(List<DataForCreateGroup> groups, File file) throws IOException {
+		XStream xstream = new XStream();
+		xstream.alias("group", DataForCreateGroup.class);
+		String xml = xstream.toXML(groups);
+		FileWriter writer = new FileWriter(file);
+		writer.write(xml);
+		writer.close();
+	}
+	
+
+	public static List<DataForCreateGroup> loadGroupsFromXmlFile(File file) {
+		XStream xstream = new XStream();
+		xstream.alias("group", DataForCreateGroup.class);
+		return (List<DataForCreateGroup>) xstream.fromXML(file);
 	}
 
 	private static void saveGroupsToCsvFile(List<DataForCreateGroup> groups, File file) throws IOException {
